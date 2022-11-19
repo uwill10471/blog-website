@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+    <h1>Compose</h1>
+
+
+    <form action="/compose" method="post">
+        <div class="d-grid gap-3">
+            <div class="p-2 bg-light border composeSpace">
+                <label for="">Title</label>
+            <input class="composeSpace" type="text" name="composeTitle">
+        </div>
+            <div class="p-2 bg-light border composeSpace">
+                <label for="">Post</label>
+            <textarea class="composeSpace" name="composePost" cols="60" rows="5"></textarea>
+        </div>
+            <div class="p-2 bg-light border composeSpace">
+                <button type="submit" class="btn btn-primary composeSpace btn-space" name="button">Publish</button>
+            </div>
+        </div>
+
+
+    </form>
+  
+    <%- include("partials/footer") -%>
